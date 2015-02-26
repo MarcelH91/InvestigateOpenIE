@@ -1,0 +1,13 @@
+﻿Java Architecture for XML Binding (JAXB) allows Java (programming language) developers to map Java class (computer science) to XML representations. JAXB provides two main features: the ability to ''marshal'' Java object (computer science) into XML and the inverse, i.e. to ''unmarshal'' XML back into Java objects. In other words, JAXB allows storing and retrieving data in memory in any XML format, without the need to implement a specific set of XML loading and saving routines for the program's class structure. It is similar to xsd.exe and XmlSerializer in the .NET Framework.
+
+JAXB is particularly useful when the specification is complex and changing. In such a case, regularly changing the XML Schema definitions to keep them synchronised with the Java definitions can be time consuming and error-prone.
+
+JAXB is a part of the Java SE platform and one of the Application programming interface in Java Platform, Enterprise Edition, the Java EE platform, and is part of the Java Web Services Development Pack (JWSDP). It is also one of the foundations for Web Services Interoperability Technology. 
+
+JAXB 1.0 was developed under the Java Community Process as JSR 31. In 2006 JAXB 2.0 was released under JSR 222 and Maintenance Release 2 released in December 2009. Reference implementations for these specifications are available under the CDDL open source license at java.net.
+
+The tool "xjc" can be used to convert XML Schema (W3C) and other schema file types (as of Java 1.6, RELAX NG, XML Document Type Definition, and Web Services Description Language WSDL are supported experimentally) to class representations. Classes are marked up using Java annotation annotations from javax.xml.bind.annotation.* namespace, for example, @XmlRootElement and @XmlElement. XML list sequences are represented by attributes of type java.util.List. Marshallers and Unmarshallers are created through an instance of JAXBContext.
+
+In addition, JAXB includes a "schemagen" tool that can essentially perform the inverse of "xjc", creating an XML Schema from a set of annotated classes.
+
+The table below lists the mappings of XML Schema (W3C) XML Schema (XSD) data types to Java data types in JAXB.

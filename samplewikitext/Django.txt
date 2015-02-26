@@ -1,0 +1,266 @@
+﻿{{Use dmy dates|date=September 2012}}
+{{Prose|date=December 2014|reason=The majority of this article is lists.}}
+{{Infobox software
+| name                   = Django
+| logo                   = [[File:Django logo.svg|frameless]]
+| screenshot             = [[File:Django default page.png|380px]]
+| caption                = The default Django page
+| collapsible            = yes
+| author                 = ''[[Lawrence Journal-World]]''
+| developer              = [[Django Software Foundation]]
+| released               = {{Start date and age|df=yes|2005|7|21}}<ref>{{cite web| title=Django FAQ | url=https://docs.djangoproject.com/en/1.7/faq/general/#why-does-this-project-exist
+| accessdate=2 September 2014}}</ref>
+| discontinued           =
+| frequently updated     =
+| programming language   = [[Python (programming language)|Python]]
+| operating system       =
+| platform               =
+| size                   = {{nowrap|7.6 [[megabyte|MB]]}}
+| language               =
+| status                 = Active
+| genre                  = [[Web application framework]]
+| license                = [[3-clause BSD]]
+| website                = {{URL|https://djangoproject.com/}}
+| repository             = {{URL|http://code.djangoproject.com/svn/django/trunk/}}
+}}
+'''Django''' ({{IPAc-en|?|d?|æ|?|?|o?}} {{respell|JANG|goh}})<ref>[http://docs.djangoproject.com/en/dev/faq/general/#what-does-django-mean-and-how-do-you-pronounce-it What does "Django" mean, and how do you pronounce it?]</ref> is a [[free and open source]] [[web application framework]], written in [[Python (programming language)|Python]], which follows the [[model–view–controller]] [[Architectural pattern (computer science)|architectural pattern]].<ref name=faq-mvc>[http://docs.djangoproject.com/en/dev/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names Django FAQ about MVC in Django]</ref><ref name=djangobook-mvc>{{cite book |author=Adrian Holovaty, Jacob Kaplan-Moss, et al |title=The Django Book |chapter= |quote=Django follows this MVC pattern closely enough that it can be called an MVC framework |url=http://www.djangobook.com/en/2.0/chapter05.html#the-mtv-or-mvc-development-pattern }}</ref> It is maintained by the [[Django Software Foundation]] (DSF), an independent organization established as a [[501(c)(3)]] non-profit.
+
+Django's primary goal is to ease the creation of complex, database-driven websites. Django emphasizes [[reusability]] and "pluggability" of components, rapid development, and the principle of [[don't repeat yourself]]. Python is used throughout, even for settings, files, and data models.  Django also provides an optional administrative [[create, read, update and delete]] interface that is generated dynamically through [[Introspection (computer science)|introspection]] and configured via admin models.
+
+Some well-known sites that use Django include [[Pinterest]],<ref>[http://www.quora.com/Pinterest/What-technologies-were-used-to-make-Pinterest Pinterest: What technologies were used to make Pinterest? - Quora<!-- Bot generated title -->]</ref> [[Instagram]],<ref>{{cite web|url=http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of|title=What Powers Instagram: Hundreds of Instances, Dozens of Technologies}}</ref> [[Mozilla Foundation|Mozilla]],<ref>[https://developer.mozilla.org/en/Python#Use_of_Python_at_Mozilla Python | MDN<!-- Bot generated title -->]</ref> [[The Washington Times]],<ref>[http://opensource.washingtontimes.com/ Opensource.washingtontimes.com]. Retrieved on 2014-05-30.</ref> [[Disqus]],<ref>{{cite web|url=http://blog.disqus.com/post/62187806135/scaling-django-to-8-billion-page-views|title=Scaling Django to 8 Billion Page Views}}</ref> and the [[Public Broadcasting Service]].<ref name=20sites>{{cite web|url=http://fearlessflyer.com/2009/11/20-creative-websites-running-django/|title=20 Creative Websites Running Django}}</ref>
+
+==History==
+Django was born in the fall of 2003, when the [[web programmer]]s at the ''[[Lawrence Journal-World]]'' newspaper, [[Adrian Holovaty]] and [[Simon Willison]], began using Python to build applications.<ref name="Django's History">{{cite web |url=http://www.djangobook.com/en/2.0/chapter01.html#django-s-history|title=Django's History|accessdate=6 June 2013 |publisher=The Django Book }}</ref> It was released publicly under a [[BSD license]] in July 2005. The framework was named after guitarist [[Django Reinhardt]].<ref name="Django's History"/>
+
+In June 2008, it was announced that a newly formed [[Django Software Foundation]] (DSF) would maintain Django in the future.<ref>[http://www.djangoproject.com/weblog/2008/jun/17/foundation/ Announcing the Django Software Foundation]</ref>
+
+==Features==
+
+===Components===
+[[File:Django useradmin.png|thumb|Screenshot of the Django admin interface for modifying a user.]]
+Despite having its own nomenclature, such as naming the callable objects generating the response "views",<ref name=faq-mvc /> the core Django framework can be seen as MVC.<ref name=djangobook-mvc /> It consists of an [[object-relational mapping|object-relational mapper]] which mediates between [[data modeling|data models]] (defined as Python classes) and a [[relational database]] ("'''M'''odel");  a system for processing requests with a [[web template system|web templating system]] ("'''V'''iew") and a [[regular expression|regular-expression]]-based [[Uniform Resource Locator|URL]] dispatcher ("'''C'''ontroller").
+
+Also included in the core framework are:
+* A lightweight and standalone web server for development and testing.
+* A form serialization and validation system which can translate between [[HTML]] forms and values suitable for storage in the database.
+* A template system that utilizes the concept of [[Inheritance (object-oriented programming)|inheritance]] borrowed from object-oriented programming.
+* A [[Web cache|caching]] framework which can use any of several cache methods.
+* Support for [[middleware]] classes which can intervene at various stages of request processing and carry out custom functions.
+* An internal dispatcher system which allows components of an application to communicate events to each other via pre-defined signals.
+* An [[Internationalization and localization|internationalization]] system, including translations of Django's own components into a variety of languages.
+* A [[serialization]] system which can produce and read [[XML]] and/or [[JSON]] representations of Django model instances.
+* A system for extending the capabilities of the template engine.
+* An interface to Python's built in [[unit test]] framework.
+
+===Bundled applications===
+The main Django distribution also bundles a number of applications in its "contrib" package, including:
+* An extensible authentication system.
+* The dynamic administrative interface.
+* Tools for generating [[RSS (file format)|RSS]] and [[Atom (standard)|Atom]] syndication feeds.
+* A sites framework that allows one Django installation to run multiple websites, each with their own content and applications.
+* Tools for generating [[Google Sitemaps]].
+* Built-in mitigation for [[cross-site request forgery]], [[cross-site scripting]], [[SQL injection]], [[password cracking]] and other typical web attacks, most of them turned on by default.<ref>{{cite web | url=https://docs.djangoproject.com/en/dev/topics/security/ | title=Security in Django | publisher=Django Project | accessdate=March 25, 2013}}</ref><ref>{{cite web | url=http://coffeeonthekeyboard.com/best-basic-security-practices-especially-with-django-697/ | title=Best Basic Security Practices (Especially with Django) | year=2012 | accessdate=March 25, 2013 | author=Socol, James}}</ref>
+* A framework for creating [[Geographic information system|GIS]] applications.
+
+===Extensibility===
+{{Primary sources|section|date=January 2015}}
+
+Django's configuration system allows third party code to be plugged in a regular project, provided they follow the reusable app<ref>[https://django-reusable-app-docs.readthedocs.org/en/latest/ What is a reusable app?]</ref> conventions. More than 2500 packages<ref>[https://www.djangopackages.com/ djangopackages.com, an open source package repository for the Django framework]</ref> are available to extend the framework original behavior, providing solutions to issues the original tool didn't: registration, search, [[Application Programming Interface|API]] provision and consumption, [[Content Management System|CMS]], etc.
+
+This extensibility is, however, mitigated by internal components dependencies on each others. While Django philosophy implies loose coupling,<ref>[https://docs.djangoproject.com/en/1.7/misc/design-philosophies/ Django design philosophies]</ref> the template filters and tags assume one engine implementation, and both the auth and admin bundled applications require the use of the internal ORM. None of them are mandatory to run a Django project, but reusable apps tends to depend on them, encouraging the developers to keep using the official stack in order to benefit fully from the apps ecosystem.
+
+===Server arrangements===
+Django can be run in conjunction with [[Apache HTTP Server|Apache]], [[NGINX]] using [[Web Server Gateway Interface|WSGI]], [[Gunicorn]], or [[Cherokee (Webserver)|Cherokee]] using flup (a Python module).<ref>[https://docs.djangoproject.com/en/dev/howto/deployment/fastcgi/#cherokee-setup Django documentation of deployment]</ref><ref>[http://www.cherokee-project.com/doc/cookbook_django.html Cookbook: Setting up Django]</ref> Django also includes the ability to launch a [[FastCGI]] server, enabling use behind any web server which supports FastCGI, such as [[Lighttpd]] or [[Hiawatha (web server)|Hiawatha]]. It is also possible to use other [[Web Server Gateway Interface|WSGI]]-compliant web servers.<ref>[https://docs.djangoproject.com/en/1.3/howto/deployment/modwsgi/ How to use Django with Apache and mod_wsgi]. Official Django documentation.</ref> Django officially supports four database backends: [[PostgreSQL]], [[MySQL]], [[SQLite]], and [[Oracle Database|Oracle]]. [[Microsoft SQL Server]] can be used with [https://bitbucket.org/Manfre/django-mssql/src django-mssql] but only in [[Microsoft]] [[operating systems]], while similarly external backends exist for [http://code.google.com/p/ibm-db/ IBM DB2], [http://code.google.com/p/sqlany-django/ SQL Anywhere] and [https://github.com/maxirobaina/django-firebird Firebird]. There is a [[Fork (software development)|fork]] named [http://www.allbuttonspressed.com/projects/django-nonrel django-nonrel] which supports [[NoSQL (concept)|NoSQL]] databases, such as [[MongoDB]] and [[Google App Engine]]'s Datastore.
+
+Django may also be run in conjunction with [[Jython]] on any [[Java EE]] application server such as [[GlassFish]] or [[JBoss]]. In this case [http://code.google.com/p/django-jython/ django-jython] must be installed in order to provide [[JDBC]] drivers for database connectivity, which also provides functionality to compile Django in to a .war suitable for deployment.
+
+[[Google App Engine]] includes support for Django version 1.x.x<ref>[http://code.google.com/appengine/articles/django-nonrel.html Running Pure Django Projects on Google App Engine]. Code.google.com (2010-11-01). Retrieved on 5 December 2011.</ref> as one of the bundled frameworks.
+
+==Using Django==
+
+===Online resources===
+* [http://docs.djangoproject.com/ Django Official Documentation] - Current and detailed documentation on nearly every aspect of Django. It includes a version selector for information pertaining to specific versions of Django.
+* [http://www.tangowithdjango.com/ Tango with Django] - A beginner's guide to web development with Django.
+* [http://twoscoopspress.com/pages/django-tutorials Two Scoops] - Making Python and Django as fun as ice cream.
+* [https://www.djangopackages.com/ Django Packages] - A directory of reusable apps, sites, tools, and more for Django projects.
+*[http://mherman.org/blog/2012/12/30/django-basics/ Django Basics - Installing Django and Setting Up a Project and an App]
+
+===Books===
+{{Refbegin}}
+*{{citation
+| first1    = Harryl
+| last1     = Percival
+| date      = 2014
+| title     = Test-Driven Development with Python
+| edition   = 1st
+| publisher = O'Reilly Media
+| page      = 480
+| isbn      = 1449364829
+| url       = http://chimera.labs.oreilly.com/books/1234000000754
+}}
+*{{citation
+| first1    = Daniel
+| last1     = Greenfeld
+| first2    = Audrey
+| last2     = Roy
+| date      = February 2014
+| title     = Two Scoops of Django: Best Practices for Django 1.6
+| edition   = 2nd
+| publisher = Two Scoops Press
+| page      = 446
+| isbn      = 098146730X
+| url       = http://twoscoopspress.com/products/two-scoops-of-django-1-6
+}}
+*{{citation
+| first1    = Marty
+| last1     = Alchin
+| date      = 10 July 2013
+| title     = Pro Django
+| edition   = 2nd
+| publisher = [[Apress]]
+| page      = 300
+| isbn      = 1-430-25809-8
+| url       = http://www.apress.com/9781430258094
+}}
+*{{citation
+| first1    = Jim
+| last1     = McGaw
+| date      = 29 October 2009
+| title     = Beginning Django E-Commerce
+| edition   = 1st
+| publisher = [[Apress]]
+| page      = 300
+| isbn      = 1-430-22535-1
+| url       = http://www.apress.com/9781430225355
+}}
+*{{citation
+| first1    = James
+| last1     = Bennett
+| date      = 24 June 2009
+| title     = Practical Django Projects
+| edition   = 2nd
+| publisher = [[Apress]]
+| page      = 272
+| isbn      = 1-430-21938-6
+| url       = http://www.apress.com/9781430219385
+}}
+*{{citation
+| first1    = Jeff
+| last1     = Forcier
+| first2    = Paul
+| last2     = Bissex
+| first3    = Wesley
+| last3     = Chun
+| date      = 3 November 2008
+| title     = Python Web Development with Django
+| edition   = 1st
+| publisher = [[Addison-Wesley]]
+| page      = 408
+| isbn      = 0-13-235613-9
+| oclc      = 213835556
+| url       = http://www.informit.com/store/product.aspx?isbn=0132356139
+}}
+{{Refend}}
+
+===Integrated development environments for Python===
+{{main|List of integrated development environments for Python}}
+
+While a number of Django developers use [[text editors]] such as [[Vim (text editor)|Vim]], [[Emacs]], [[TextMate]] or [[Sublime Text|Sublime]] with Django Bundle for their projects, others prefer python-specific tools providing debugging, refactoring, unit testing, etc.<ref>[http://stackoverflow.com/questions/175044/django-development-ide Django development IDEs discussion at Stackoverflow]</ref>
+*[[Aptana Studio]] with integrated [[PyDev]]
+*[[Eclipse ide|Eclipse]] with [[PyDev]]
+*[[Eric Python IDE]]
+*[[IntelliJ IDEA]] with Django plugin, provides functionality similar to PyCharm
+*[[Koding]]
+*[[Komodo IDE]]
+*[[Microsoft Visual Studio]] with [[Python Tools for Visual Studio]]
+*[[MonoDevelop]]
+*[[NetBeans]] with Django Plugin<ref>[http://code.google.com/p/netbeans-django/ NetBeans Django Plugin]</ref>
+*[[Ninja-ide|Ninja IDE]]
+*[[PyCharm]]
+*[[PyScripter]]
+*[[Spyder (software)]]
+*[[SourceLair]]
+*[[Wing IDE]]
+
+==Versions==
+{| class="wikitable"
+|-
+!
+! Meaning
+|-
+| style="background-color:#fa8072;" | Red
+| Not supported
+|-
+| style="background-color:#f0e68c;" | Yellow
+| Still supported
+|-
+| style="background-color:#A0E75A;" | Green
+| Current version
+|}
+
+{| class="wikitable sortable"
+|+ Version history
+|-
+! Version !! Date !! Notes
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 0.90<ref>[https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ "Introducing Django 0.90"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2005|11|16|abbr=on}} || style="text-align:left;"|
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 0.91<ref>[https://www.djangoproject.com/weblog/2006/jan/11/091/ "Django 0.91 released"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2006|01|11|abbr=on}} || style="text-align:left;"| "new-admin"
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 0.95<ref>[https://www.djangoproject.com/weblog/2006/jul/29/095/ "Introducing Django 0.95"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2006|07|29|abbr=on}} || style="text-align:left;"| "magic removal"
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 0.96<ref>[https://www.djangoproject.com/weblog/2007/mar/23/096/ "Announcing Django 0.96!"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2007|03|23|abbr=on}} || style="text-align:left;"| "newforms", testing tools
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 1.0<ref>[http://www.djangoproject.com/weblog/2008/sep/03/1/ "Django 1.0 released!"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2008|09|03|abbr=on}} || style="text-align:left;"| API stability, decoupled admin, unicode
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 1.1<ref>[https://www.djangoproject.com/weblog/2009/jul/29/1-point-1/ "Django 1.1 released"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2009|07|29|abbr=on}} || style="text-align:left;"| Aggregates, transaction based tests
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 1.2<ref>[https://www.djangoproject.com/weblog/2010/may/17/12/ "Django 1.2 released"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2010|05|17|abbr=on}} || style="text-align:left;"| Multiple db connections, [[CSRF]], model validation
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 1.3<ref>[https://www.djangoproject.com/weblog/2011/mar/23/13/ "Django 1.3 released"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2011|03|23|abbr=on}} || style="text-align:left;"| Class based views, staticfiles
+|- style="text-align:right;"
+| style="background-color:#f0e68c;" | 1.4<ref>[https://www.djangoproject.com/weblog/2012/mar/23/14/ "Django 1.4 released"]. Django weblog. Retrieved 2 February 2013.</ref> || {{dts|format=dmy|2012|03|23|abbr=on}} || style="text-align:left;"| Timezones, in browser testing, app templates. '''Long-term support release, supported until at least March 2015'''
+|- style="text-align:right;"
+| style="background-color:#fa8072;" | 1.5<ref>[https://www.djangoproject.com/weblog/2013/feb/26/15/ "Django 1.5 released"] Django weblog. Retrieved 27 February 2013.</ref> || {{dts|format=dmy|2013|02|26|abbr=on}} || style="text-align:left;"| Python 3 Support, configurable user model
+|- style="text-align:right;"
+| style="background-color:#f0e68c;" | 1.6<ref>[https://www.djangoproject.com/weblog/2013/nov/06/django-16-released/ "Django 1.6 released"] Django weblog. Retrieved 6 November 2013.</ref> || {{dts|format=dmy|2013|11|06|abbr=on}} || style="text-align:left;"| Dedicated to Malcolm Tredinnick, db transaction management, connection pooling
+|- style="text-align:right;"
+| style="background-color:#A0E75A;" | 1.7<ref>[https://www.djangoproject.com/weblog/2014/sep/02/release-17-final/ "Django 1.7 released"] Django weblog. Retrieved 4 September 2014.</ref> || {{dts|format=dmy|2014|09|02|abbr=on}} || style="text-align:left;"| Migrations, application loading and configuration
+<!--
+
+MAJOR RELEASES ONLY PLEASE
+
+-->
+|}
+
+==Community==
+
+===DjangoCon===
+There is a semiannual conference for Django developers and users, named "DjangoCon", that has been held since September 2008. DjangoCon is held annually in Europe, in May or June;<ref>[http://lanyrd.com/series/djangocon-eu/ DjangoCon EU series], Lanyrd.com</ref> while another is held in the United States in September, usually in [[Portland, Oregon]].<ref>[http://lanyrd.com/series/djangocon-us/ DjangoCon US series], Lanyrd.com</ref> The 2012 DjangoCon took place in Washington D.C from 3 to 8 September. 2013 DjangoCon was held in Chicago at the Hyatt Regency Hotel and the post-conference Sprints were hosted at Digital Bootcamp, computer training center.<ref>{{cite web |url=http://www.djangocon.us/ |publisher=DjangoCon |deadurl=no |title=DjangoCon |accessdate=29 July 2012}}</ref>
+
+Django mini-conferences were held in Hobart, Australia in July 2013 and Brisbane, Australia in August 2014.<ref>[http://www.djangocon.com.au/ DjangoCon AU 2013]. Djangocon.com.au. Retrieved on 2014-05-30.</ref>
+
+==Other languages==
+Django's template design has been ported to other languages besides Python, providing decent cross-platform support.  Some of these options are more direct ports, while others are inspired by Django, retaining its concepts but taking greater liberties to deviate from Django's design.
+* [http://paularmstrong.github.com/swig/ Swig] for [[JavaScript]]
+* [http://liquidmarkup.org/ Liquid] for [[Ruby (programming language)|Ruby]]
+* [https://metacpan.org/pod/Template::Swig Template::Swig] for [[Perl]]
+* [http://twig.sensiolabs.org/ Twig] for [[PHP]]
+* [http://jinja.pocoo.org/ Jinja] for [[Python (programming language)|Python]]
+
+==See also==
+{{Portal|Free software}}
+{{Commons category}}
+*[[Comparison of web application frameworks]]
+
+==References==
+{{Reflist|30em}}
+
+{{Python Web Application Frameworks}}
+{{Application frameworks}}
+
+{{DEFAULTSORT:Django (Web Framework)}}
+[[Category:Python web application frameworks]]
+[[Category:Free software programmed in Python]]
+[[Category:Web application frameworks]]
+[[Category:Software using the BSD license]]

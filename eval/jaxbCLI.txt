@@ -1,0 +1,21 @@
+0,93 (JAXB; allows; i.e. to ''unmarshal'' XML back into Java objects. In other words, JAXB allows storing and retrieving data in memory in any XML format)
+0,75 Context(JAXB allows,List([332, 343))):(JAXB; allows retrieving; data in memory; L:in any XML format)
+0,50 (It; is; similar to xsd.exe and XmlSerializer; L:in the .NET Framework)
+0,92 Context(It is,List([516, 521))):(?Java Architecture for XML Binding; allows; Java (programming language) developers to map Java class (computer science) to XML representations)
+0,82 Context(It is,List([516, 521))):(JAXB; provides; two main features)
+--
+0,96 (regularly changing the XML Schema definitions; can be; time consuming and error-prone; L:In such a case)
+0,86 Context(regularly changing the XML Schema definitions can be,List([92, 196))):(JAXB; is; particularly useful; T:when the specification is complex and changing)
+--
+0,89 (JAXB; is; part of the Java Web Services Development Pack)
+0,43 (It; is also; one of the foundations for Web Services Interoperability Technology)
+0,92 Context(It is also,List([211, 221))):(JAXB; is; a part of the Java SE platform and one of the Application programming interface in Java Platform)
+0,88 (JAXB; is a part of; the Java SE platform and one)
+--
+0,94 (JAXB 1.0; was developed; L:under the Java Community Process)
+--
+0,93 Context(Marshallers and Unmarshallers are created,List([458, 499))):(XmlElement. XML list sequences; are represented; by attributes of type java.util.List)
+0,93 Context(RELAX NG , XML Document Type Definition , and Web Services Description Language WSDL are supported experimentally Classes are marked up,List([100, 260))):(The tool "xjc; can be used; to convert XML Schema (W3C) and other schema file types (as of Java 1.6)
+--
+0,78 (JAXB; includes; a "schemagen" tool that can essentially perform the inverse of "xjc")
+--

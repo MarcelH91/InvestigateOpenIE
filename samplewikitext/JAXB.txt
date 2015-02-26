@@ -1,0 +1,141 @@
+﻿'''Java Architecture for XML Binding''' ('''JAXB''') allows [[Java (programming language)|Java]] developers to map Java [[class (computer science)|classes]] to [[XML]] representations. JAXB provides two main features: the ability to [[serialization|''marshal'']] Java [[object (computer science)|objects]] into XML and the inverse, i.e. to ''unmarshal'' XML back into Java objects. In other words, JAXB allows storing and retrieving data in memory in any XML format, without the need to implement a specific set of XML loading and saving routines for the program's class structure. It is similar to <code>xsd.exe</code> and <code>XmlSerializer</code> in the [[.NET Framework]].
+
+JAXB is particularly useful when the specification is complex and changing. In such a case, regularly changing the [[XML Schema (W3C)|XML Schema]] definitions to keep them synchronised with the Java definitions can be time consuming and error-prone.
+
+JAXB is a part of the [[Java SE]] platform and one of the [[Application programming interface|APIs]] in [[Java Platform, Enterprise Edition|the Java EE platform]], and is part of the [[Java Web Services Development Pack]] (JWSDP). It is also one of the foundations for [[Web Services Interoperability Technology|WSIT]]. 
+
+JAXB 1.0 was developed under the [[Java Community Process]] as JSR 31.<ref>{{cite web |url=http://jcp.org/en/jsr/detail?id=031 |title=JSRs: Java Specification Requests. JSR 31: XML Data Binding Specification |accessdate=2011-02-15}}</ref> In 2006 JAXB 2.0 was released under JSR 222 and Maintenance Release 2 released in December 2009.<ref>{{cite web |url=http://jcp.org/en/jsr/detail?id=222 |title=JSRs: Java Specification Requests. JSR 222: Java Architecture for XML Binding (JAXB) 2.0 |accessdate=2011-02-15}}</ref> [[Reference implementation]]s for these specifications are available under the [[CDDL|CDDL open source license]] at [[java.net]].
+
+== Usage ==
+The tool "<tt>xjc</tt>" can be used to convert [[XML Schema (W3C)|XML Schema]] and other schema file types (as of Java 1.6, [[RELAX NG]], XML [[Document Type Definition|DTD]], and [[Web Services Description Language|WSDL]] are supported experimentally) to class representations.<ref>{{cite web |url=http://download.oracle.com/javase/6/docs/technotes/tools/share/xjc.html |title=xjc - Java Architecture for XML Binding |accessdate=2011-02-15}}</ref> Classes are marked up using [[Java annotation|annotations]] from <tt>javax.xml.bind.annotation.*</tt> namespace, for example, <tt>@XmlRootElement</tt> and <tt>@XmlElement</tt>. XML list sequences are represented by attributes of type <tt>java.util.List</tt>. Marshallers and Unmarshallers are created through an instance of JAXBContext.
+
+In addition, JAXB includes a "<tt>schemagen</tt>" tool that can essentially perform the inverse of "<tt>xjc</tt>", creating an XML Schema from a set of annotated classes.
+
+== Default data type bindings ==
+The table below lists the mappings of [[XML Schema (W3C)|XML Schema]] (XSD) data types to Java data types in JAXB.<ref>
+{{cite web
+  | url = http://download.oracle.com/docs/cd/E12840_01/wls/docs103/webserv/data_types.html#wp223908
+  | title = Using JAXB Data Binding: Standard Data Type Mapping
+}}
+</ref>
+
+{| class="wikitable sortable" style="font-size: 100%; text-align: left; width: 35%;"
+|-
+! XML Schema Type
+! Java Data Type
+|-
+|<code>xsd:string</code>
+|<code>java.lang.String</code>
+|-
+|<code>xsd:integer</code>
+|<code>java.math.BigInteger</code>
+|-
+|<code>xsd:positiveInteger</code>
+|<code>java.math.BigInteger</code>
+|-
+|<code>xsd:int</code>
+|<code>'''int'''</code>
+|-
+|<code>xsd:long</code>	
+|<code>'''long'''</code>
+|-
+|<code>xsd:short</code>
+|<code>'''short'''</code>
+|-
+|<code>xsd:decimal</code>	
+|<code>java.math.BigDecimal</code>
+|-
+|<code>xsd:float</code>
+|<code>'''float'''</code>
+|-
+|<code>xsd:double</code>	
+|<code>'''double'''</code>
+|-
+|<code>xsd:boolean</code>
+|<code>'''boolean'''</code>
+|-
+|<code>xsd:byte</code>
+|<code>'''byte'''</code>
+|-
+|<code>xsd:QName</code>	
+|<code>javax.xml.namespace.QName</code>
+|-
+|<code>xsd:dateTime</code>
+|<code>javax.xml.datatype.XMLGregorianCalendar</code>
+|-
+|<code>xsd:base64Binary</code>
+|<code>'''byte[]'''</code>
+|-
+|<code>xsd:hexBinary</code>
+|<code>'''byte[]'''</code>
+|-
+|<code>xsd:unsignedInt</code>
+|<code>'''long'''</code>
+|-
+|<code>xsd:unsignedShort</code>
+|<code>'''int'''</code>
+|-
+|<code>xsd:unsignedByte</code>
+|<code>'''short'''</code>
+|-
+|<code>xsd:unsignedLong</code>
+|<code>java.math.BigDecimal</code>
+|-
+|<code>xsd:time</code>
+|<code>javax.xml.datatype.XMLGregorianCalendar</code>
+|-
+|<code>xsd:date</code>
+|<code>javax.xml.datatype.XMLGregorianCalendar</code>
+|-
+|<code>xsd:g</code>
+|<code>javax.xml.datatype.XMLGregorianCalendar</code>
+|-
+|<code>xsd:anySimpleType</code><ref>for <code>xsd:element</code> of this type</ref>
+|<code>java.lang.Object</code>
+|-
+|<code>xsd:anySimpleType</code><ref>for <code>xsd:attribute</code> of this type</ref>
+|<code>java.lang.String</code>
+|-
+|<code>xsd:duration</code>
+|<code>javax.xml.datatype.Duration</code>
+|-
+|<code>xsd:NOTATION</code>
+|<code>javax.xml.namespace.QName</code>
+|-
+|}
+
+==Versions==
+* Java SE 7: JAXB 2.2.3 (JSR 222, maintenance release 2) <ref>{{cite web |url=http://docs.oracle.com/javase/7/docs/technotes/guides/xml/enhancements.html |title=Java SE 7: Java XML Technology Enhancements | accessdate=2012-03-21}}</ref>
+* Java SE 6: JAXB 2.0 (JSR 222)<ref>{{cite web |url=http://www.oracle.com/technetwork/java/javase/features-141434.html |title=Java SE 6: Features and Enhancements | accessdate=2012-03-21}}</ref>
+
+==See also==
+* [[XML data binding]]
+* [[JiBX]] &ndash; one of the fastest XML data binders <ref>{{cite web |url=http://www.ibm.com/developerworks/xml/library/x-databdopt2/ |title=XML and Java technologies: Data binding, Part 2: Performance |author=Dennis Sosnoski |accessdate=2011-02-15}}</ref><ref>{{cite web |url=http://soa.sys-con.com/node/114130?page=0,2 |title=XML Binding Frameworks in the Context of Service-Oriented Architecture |accessdate=2011-02-15}}</ref>
+* [[XMLBeans]] &ndash; a similar and complementary technology to [[JAXB]] from [[Apache Software Foundation]]
+* [[TopLink]] &ndash; an object to relational and object to [[XML]] mapper from [[Oracle Corporation|Oracle]] that supports JAXB 1.0
+* [[EclipseLink]] MOXy &ndash; [[open source]] implementation of JAXB and object XML mapping services under the [[Eclipse Foundation]]
+* [[Liquid XML Studio]] - Commercial tool for XML data binding code generation
+* [http://simple.sourceforge.net Simple XML Serialization] - An alternative to JAXB, enabling rapid development of XML configuration and communication systems
+
+==References==
+{{reflist|2}}
+
+==External links==
+* [http://jaxb.java.net/ JAXB home page] Reference Implementation on Project [[GlassFish]]
+* [http://java.sun.com/xml/jaxb/index.jsp previous JAXB home page]
+* [http://jaxb.java.net/tutorial/ A JAXB Tutorial] by Wolfgang Laun
+* [http://www.jcp.org/en/jsr/detail?id=222 JSR 222] (JAXB 2.0)
+* [http://www.jcp.org/en/jsr/detail?id=31 JSR 31] (JAXB 1.0)
+* [http://docs.oracle.com/javaee/5/tutorial/doc/bnazf.html The Java EE 5 Tutorial - Binding between XML Schema and Java Classes] JAXB chapter of the Java EE 5 Tutorial
+* [http://wiki.netbeans.org/JAXBWizard JAXB Wizard]
+
+===Articles===
+* [http://www.devx.com/Java/Article/34069 Generate an XML Document from an Object Model with JAXB 2]
+* [http://archive.is/20121206043742/http://blogs.techrepublic.com.com/programming-and-development/?p=498 JAXB 2.0]
+* [http://www.ibm.com/developerworks/xml/library/x-databdopt2/ XML and Java technologies: Data binding, Part 2: Performance]
+
+{{Java EE 7}}
+
+{{DEFAULTSORT:Xml Binding Architecture}}
+[[Category:Java API for XML]]
+[[Category:Java specification requests]]

@@ -1,0 +1,45 @@
+0,44 (It; is maintained; by the Django Software Foundation)
+0,95 Context(It is maintained,List([189, 205))):(Django; is; a free and open source web application framework, written in Python (programming language),)
+--
+0,91 (Django; provides; an optional administrative create)
+0,94 (Django; emphasizes; reusability and "pluggability" of components, rapid development, and the principle of)
+0,96 Context(Django emphasizes,List([84, 101))):(Django's primary goal; is; to ease the creation of complex, database-driven websites)
+--
+0,98 (Some well-known sites that use Django; include; Pinterest, Instagram, Mozilla Foundation, The Washington Times, Disqus, and the Public Broadcasting Service)
+--
+0,92 (The framework; was named; after guitarist Django Reinhardt)
+0,43 (It; was released publicly; L:under a BSD license; T:in July 2005)
+0,90 Context(It was released publicly,List([185, 209))):(Django; was born; L:in the fall of 2003)
+--
+0,82 (an object-relational mapping object-relational mapper; mediates; )
+0,90 (data modeling; defined; as Python classes)
+0,51 (It; consists; of an object-relational mapping object-relational mapper)
+0,94 Context(It consists,List([152, 163))):(the core Django framework; can be seen; as MVC)
+--
+0,83 (The main Django distribution; bundles; a number of applications in its "contrib" package, including an extensible authentication system, the dynamic administrative interface, tools for generating RSS (file format) and Atom syndication feeds, a sites framework that allows one Django installation to run multiple websites, each with their own content and applications tools for generating Google Sitemaps, built-in mitigation for cross-site request forgery, cross-site scripting, SQL injection, password cracking and other typical web attacks)
+0,89 (a sites framework; allows; one Django installation to run multiple websites)
+0,91 Context(a sites framework allows,List([245, 274))):(one Django installation; to run; multiple websites)
+--
+0,91 (More than 2500 packages; to extend; the framework original behavior)
+0,91 (More than 2500 packages; providing; solutions; to issues)
+0,90 (More than 2500 packages; are; available to extend the framework original behavior)
+0,91 Context(More than 2500 packages are,List([141, 168))):(Django's configuration system; allows; third party code to be plugged in a regular project, provided they follow the reusable app conventions. More than 2500 packages are available to extend the framework original behavior, providing solutions to issues the original tool)
+0,89 Context(Django 's configuration system allows More than 2500 packages are,List([0, 168))):(third party code; to be plugged; L:in a regular project)
+--
+0,91 (This extensibility; is; however; mitigated by internal components dependencies on each others)
+0,95 (both the auth and admin bundled applications; require; the use of the internal ORM)
+0,89 (reusable apps; encouraging; the developers; to keep using the official stack in order)
+0,93 (Django philosophy; implies; loose coupling, the template filters and tags)
+--
+0,95 (a Fork (software development) named django-nonrel; supports; NoSQL)
+--
+0,94 (Google App Engine; includes; support for Django version 1.x)
+--
+0,94 (The 2012 DjangoCon; took; place; L:in Washington D.C; T:from 3 to 8 September)
+0,95 (a semiannual conference for Django developers and users; named; DjangoCon)
+0,93 (DjangoCon; was held; L:in Chicago; L:at the Hyatt Regency Hotel and the post-conference Sprints)
+0,96 (a semiannual conference for Django developers and users; has been held; T:since September 2008)
+0,93 (DjangoCon; is held; T:annually; L:in Europe; T:in May or June)
+0,88 (There; is a semiannual conference for; Django developers and users)
+--
+0,94 (Django mini-conferences; were held; L:in Hobart; T:in July 2013 and Brisbane; T:in August 2014)

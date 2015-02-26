@@ -1,0 +1,247 @@
+How many sentences were processed?
+74
+
+Neglected sentences: 5
+Half processed sentences: 32
+Completely processed sentences: 37
+
+
+How many extracted triples are correct | incorrect?
+
+78	 |	39
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Which correct triples fit into SoLaSoTe?
+
+0,95 (Rails; is; a Solution full-stack framework)
+
+memberOf 				onto:Entity 				onto:Container
+------------
+0,96 (a Solution full-stack framework; emphasizes; the use of well-known software engineering software design pattern and paradigms, including convention over configuration)
+
+techUsesConcept 		onto:Technology 			onto:Concept
+------------
+0,90 (David Heinemeier Hansson; extracted; Ruby; on Rails from his work on Basecamp Classic Basecamp)
+
+designedBy 				onto:Entity 				foaf:Person
+developedBy 			onto:Entity 				foaf:Person
+basedOn 				onto:System 				onto:System
+------------
+0,39 (Basecamp Classic Basecamp; [is] a project management tool by; 37signals)
+
+designedBy 				onto:Entity 				foaf:Person
+developedBy 			onto:Entity 				foaf:Person
+------------
+0,95 (Hansson; released; Rails; as open source; T:in July 2004; T:first)
+
+designedBy 				onto:Entity 				foaf:Person
+developedBy 			onto:Entity 				foaf:Person
+------------
+0,91 (Engines; give; developers; the ability to reuse application pieces complete with routes, view paths and models)
+
+supports 				onto:Instrument 			onto:Instrument
+
+------------
+0,90 Context(Engines give,List([259, 271))):(Templates; enable; to generate a skeleton application with custom RubyGems and configurations)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,81 Context(Templates enable Engines give,List([152, 271))):(Templates; enable to generate; a skeleton application with custom RubyGems and configurations)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,94 (The Rack web server interface and Metal; allow; one to write optimized pieces of code)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,88 (Merb; was merged; with Rails)
+
+partOf 					onto:Entity 				onto:Entity
+------------
+0,87 (Ruby on Rails; announced; it would work with the Merb project)
+0,55 Context(Ruby on Rails announced,List([81, 104))):(it; would work; with the Merb project; to bring "the best ideas of Merb" into Rails 3)
+0,29 Context(Ruby on Rails announced it would work,List([81, 118))):(it; would work to bring; the best ideas of Merb; into Rails 3)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,92 (Rails 3.2.12; supports; Ruby 2.0)
+0,85 Context(Rails 3.2.12 supports,List([227, 248))):(Rails 3.2.x; is; the last version that supports Ruby 1.8.7)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,96 (Ruby on Rails; uses; the model-view-controller (MVC) pattern; to organize application programming)
+
+techUsesConcept 		onto:Technology 			onto:Concept
+------------
+0,91 (Rails; encourages; developers; to use Representational state transfer RESTful routes)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,92 (an action; is typically; a basic unit that describes how to respond to a specific external web-browser request; L:In Ruby on Rails)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,89 (A controller; is a component of; Rails)
+
+partOf 					onto:Entity 				onto:Entity
+------------
+0,97 (A view in the default configuration of Rails; is; an ERB-Templating)
+
+supports 				onto:Instrument 			onto:Instrument
+-----------
+0,93 (Ruby on Rails; generates; scaffolding code)
+
+supports 				onto:Instrument 			onto:Instrument
+-----------
+0,94 (a simple Ruby web server; is distributed; with Ruby)
+
+partOf 					onto:Entity 				onto:Entity
+-----------
+0,98 (the Passenger web server; replaced; Mongrel; as the most-used web server for Ruby on Rails; T:From 2008 onwards)
+
+similarTo 				onto:Entity 				rdfs:Literal
+----------
+0,91 (CoffeeScript; was introduced; L:in Rails 3.1; as the default Javascript language)
+
+techUsesLang 			onto:Technology 			onto:Language
+---------
+0,72 Context(CoffeeScript was introduced,List([782, 809))):(jQuery; is fully supported; )
+
+supports 				onto:Instrument 			onto:Instrument
+---------
+0,96 Context(jQuery is fully supported CoffeeScript was introduced,List([579, 809))):(Ruby on Rails 3.0; uses; a technique called Unobtrusive JavaScript; to separate the functionality (or logic) from the structure of the web page)
+
+techUsesConcept 		onto:Technology 			onto:Concept
+---------
+0,91 Context(Ruby on Rails is also this was replaced,List([0, 377))):(programming; includes; the Prototype JavaScript framework and the Scriptaculous JavaScript controls and visual effects library)
+0,94 (jQuery; is; the default JavaScript library in Rails 3.1)
+
+techUsesTech 			onto:Technology 			onto:Technology
+partOf 					onto:Entity 				onto:Entity
+---------
+0,95 Context(The latter is,List([86, 99))):(Ruby on Rails; offers; both HTML and XML; T:Since version 2.0)
+
+uses 					onto:System 				onto:Instrument
+---------
+0,92 (the server; uses; ERuby; in the HTML views)
+
+uses 					onto:System 				onto:Instrument
+---------
+0,95 Context(files having,List([74, 86))):(Rails; supports; swapping-in alternative templating languages, such as HAML and Mustache)
+
+supports 				onto:Instrument 			onto:Instrument
+techUsesLang 			onto:Technology 			onto:Language
+---------
+0,96 (Ruby on Rails 3.0; to work; with Ruby 1.8.7, Ruby 1.9.2, and JRuby 1.5.2+)
+0,69 (earlier versions; are not supported; )
+0,96 Context(earlier versions are not supported,List([91, 125))):(Ruby on Rails 3.0; has been designed; to work with Ruby 1.8.7, Ruby 1.9.2, and JRuby 1.5.2+)
+0,94 (Rails 3.2 series; is; the last series to support Ruby 1.8.7)
+
+techDependsOnLang 		onto:Technology 			onto:Language
+--------
+0,95 (the Action Web Service package; is replaced; by Active Resource; T:now)
+
+similarTo 				onto:Entity 				rdfs:Literal
+uses 					onto:System 				onto:Instrument
+varies 					onto:System 				onto:System
+--------
+0,97 (plugins; are; to be placed under vendor/plugins; L:Rails 3.2 deprecates the old plugins Rails 2-3-stable style)
+0,89 (developers; can make; L:Plug-in (computing; to extend existing packages)
+0,91 Context(Ruby on Rails also included Apart developers can make,List([243, 392))):(Ruby on Rails; is separated; into various packages)
+--
+0,92 (RubyGems; is included; with current versions of Ruby)
+
+partOf 					onto:Entity 				onto:Entity
+-------
+0,92 (Many free Unix-like systems; also support; installation of Ruby on Rails and its dependencies)
+
+supports 				onto:Instrument 			onto:Instrument
+-------
+0,94 (Ruby on Rails; is typically deployed; with a database server such as MySQL or PostgreSQL)
+
+uses 					onto:System 				onto:Instrument
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Frequencies of predicates from the set of correct triples
+
+be:	13
+
+emphasize: 1
+encourage:	1
+
+give:	1
+enable:	2
+allow:	1
+supports:	6
+use: 	6
+provide:	1
+introduce:	1
+offer:		1
+include:	4
+merge:	1
+
+replace:	2
+release:	9
+announce:	1
+
+extract:	1
+share:	1
+launch:	1
+work:	3
+choose: 	1
+define:		1
+describe:	2
+compile:	1
+generate:	1
+distribute:	1
+need:		1
+run:		1
+prefer:		1
+design:		1
+deprecate:	1
+make:		1
+mean:		2
+note:		1
+deploy:		1
+specify:	2
+place:		2
+separate:	1
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Comparison of articles Rails vs Django
+
+Both frameworks encourage basic principles. This can be observed by looking at the predicates.
+
+Ruby has more release information than django
+
+Comparable degree of detail
+
+Common attributes can be observed: 
+open source web framework
+MVC Pattern
+
+
+
+----------------
+Collection of bad samples:
+David Heinemeier Hansson extracted Ruby on Rails from his work on Basecamp Classic Basecamp, a project management tool by 37signals (now a web application company).
+
+0,90 (David Heinemeier Hansson; extracted; Ruby; on Rails from his work on Basecamp Classic Basecamp)
+0,39 (Basecamp Classic Basecamp; [is] a project management tool by; 37signals)
+
+Rails 4.2 was released on December 19, 2014, introducing Active Job, asynchronous emails, Adequate Record, Web Console and foreign keys.
+0,94 (Rails 4.2; was released; T:on December 19)
+
+Like many web frameworks, Ruby on Rails uses the model–view–controller (MVC) pattern to organize application programming.
+0,96 (Ruby on Rails; uses; the model-view-controller (MVC) pattern; to organize application programming)
+
+A controller is a component of Rails that responds to external requests from the web server to the application by determining which view file to render. The controller may also have to query one or more models directly for information and pass these on to the view. A controller may provide one or more actions. In Ruby on Rails, an action is typically a basic unit that describes how to respond to a specific external web-browser request. Also note that the controller/action will be accessible for external web requests only if a corresponding route is mapped to it. Rails encourages developers to use Representational state transfer RESTful routes, which include actions such as: create, new, edit, update, destroy, show, and index. These mappings of incoming requests/routes to controller actions can be easily set up in the routes configuration file.
+0,83 (a component of Rails; responds; to external requests from the web server to the application by determining which view file to render. The controller may also have to query one or more models directly for information and pass these on to the view. A controller may provide one or more actions. In Ruby on Rails, an action is typically a basic unit that describes how to respond to a specific external web-browser request. Also note that the controller/action will be accessible for external web requests only if a corresponding route is mapped to it. Rails encourages developers to use Representational state transfer RESTful routes, which include actions such as: create, new, edit, update, destroy, show, and index. These mappings of incoming requests/routes)
+
+Rails running on Matz's Ruby Interpreter (the ''de facto'' reference interpreter for Ruby) had been criticized for issues with scalability.
+0,93 (Rails; running; L:on Matz's Ruby Interpreter)
+0,91 (Rails; had been criticized; for issues with scalability)

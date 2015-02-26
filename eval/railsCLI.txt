@@ -1,0 +1,106 @@
+0,95 (Rails; is; a Solution full-stack framework)
+0,96 (a Solution full-stack framework; emphasizes; the use of well-known software engineering software design pattern and paradigms, including convention over configuration)
+--
+0,90 (David Heinemeier Hansson; extracted; Ruby; on Rails from his work on Basecamp Classic Basecamp)
+0,39 (Basecamp Classic Basecamp; [is] a project management tool by; 37signals)
+--
+0,95 (Hansson; released; Rails; as open source; T:in July 2004; T:first)
+0,92 (Hansson; did not share; Commit (data management) rights; to the project; T:until February 2005)
+--
+0,91 (Engines; give; developers; the ability to reuse application pieces complete with routes, view paths and models)
+0,90 Context(Engines give,List([259, 271))):(Templates; enable; to generate a skeleton application with custom RubyGems and configurations)
+0,81 Context(Templates enable Engines give,List([152, 271))):(Templates; enable to generate; a skeleton application with custom RubyGems and configurations)
+0,94 (The Rack web server interface and Metal; allow; one to write optimized pieces of code)
+0,91 Context(The Rack web server interface and Metal allow,List([368, 413))):(Rails version 2.3; was released; T:on March 15, 2009)
+--
+0,90 (Merb; was launched; T:On December 23, 2008)
+0,88 (Merb; was merged; with Rails)
+0,87 (Ruby on Rails; announced; it would work with the Merb project)
+0,55 Context(Ruby on Rails announced,List([81, 104))):(it; would work; with the Merb project; to bring "the best ideas of Merb" into Rails 3)
+0,29 Context(Ruby on Rails announced it would work,List([81, 118))):(it; would work to bring; the best ideas of Merb; into Rails 3)
+--
+0,94 (Rails 3.1; was released; T:on August 31)
+--
+0,92 (Rails 3.2.12; supports; Ruby 2.0)
+0,85 Context(Rails 3.2.12 supports,List([227, 248))):(Rails 3.2.x; is; the last version that supports Ruby 1.8.7)
+0,92 Context(Automatic Query Explain Rails 3.2.x is Rails 3.2.12 supports,List([125, 248))):(Rails 3.2; was released; T:on January 20)
+--
+0,94 (Rails 4.0; was released; T:on June 25, 2013)
+--
+0,94 (Rails 4.1; was released; T:on April 8, 2014)
+--
+0,94 (Rails 4.2; was released; T:on December 19)
+--
+0,96 (Ruby on Rails; uses; the model-view-controller (MVC) pattern; to organize application programming)
+--
+0,87 (Developers; can choose; any model name)
+0,94 Context(Developers can choose,List([270, 291))):(a model class User; will be defined; L:in the file user.rb in the app/models directory; T:usually)
+--
+0,91 (Rails; encourages; developers; to use Representational state transfer RESTful routes)
+0,91 (a basic unit; describes; how to respond to a specific external web-browser request)
+0,81 Context(a basic unit describes,List([353, 380))):(a basic unit; describes to respond; to a specific external web-browser request)
+0,90 (A controller; may provide; one or more actions)
+0,93 (Representational state transfer RESTful routes; include; actions such as: create)
+0,92 (an action; is typically; a basic unit that describes how to respond to a specific external web-browser request; L:In Ruby on Rails)
+0,89 (A controller; is a component of; Rails)
+--
+0,97 (A view in the default configuration of Rails; is; an ERB-Templating)
+0,93 (an ERB-Templating; is compiled; to HTML)
+0,92 (Many other templating systems; can be used; for views)
+--
+0,93 (Ruby on Rails; generates; scaffolding code)
+0,94 (a simple Ruby web server; is distributed; with Ruby)
+0,92 (the models and views; needed; for a basic website)
+0,39 (There; were quite a few changes in; the 2.0 release)
+--
+0,95 (Ruby on Rails; is; most commonly not connected to the Internet directly)
+0,61 (it; can also run; on Lighttpd, Apache (web server), Cherokee (Webserver), Hiawatha (web server), nginx (either as a module - Phusion Passenger for example - or via Common Gateway Interface, FastCGI or mod_ruby), and many others)
+0,98 (the Passenger web server; replaced; Mongrel; as the most-used web server for Ruby on Rails; T:From 2008 onwards)
+0,86 Context(the Passenger web server replaced,List([437, 470))):(Mongrel; was generally preferred; T:in the early days)
+--
+0,91 (CoffeeScript; was introduced; L:in Rails 3.1; as the default Javascript language)
+0,72 Context(CoffeeScript was introduced,List([782, 809))):(jQuery; is fully supported; )
+0,96 Context(jQuery is fully supported CoffeeScript was introduced,List([579, 809))):(Ruby on Rails 3.0; uses; a technique called Unobtrusive JavaScript; to separate the functionality (or logic) from the structure of the web page)
+0,91 Context(Ruby on Rails is also this was replaced,List([0, 377))):(programming; includes; the Prototype JavaScript framework and the Scriptaculous JavaScript controls and visual effects library)
+0,94 (jQuery; is; the default JavaScript library in Rails 3.1)
+--
+0,91 (The latter; is; the facility for RESTful web services)
+0,95 Context(The latter is,List([86, 99))):(Ruby on Rails; offers; both HTML and XML; T:Since version 2.0)
+0,39 (The latter; is the facility for; RESTful web services)
+--
+0,92 (the server; uses; ERuby; in the HTML views)
+0,95 Context(files having,List([74, 86))):(Rails; supports; swapping-in alternative templating languages, such as HAML and Mustache)
+--
+0,96 (Ruby on Rails 3.0; to work; with Ruby 1.8.7, Ruby 1.9.2, and JRuby 1.5.2+)
+0,69 (earlier versions; are not supported; )
+0,96 Context(earlier versions are not supported,List([91, 125))):(Ruby on Rails 3.0; has been designed; to work with Ruby 1.8.7, Ruby 1.9.2, and JRuby 1.5.2+)
+--
+0,94 (Rails 3.2 series; is; the last series to support Ruby 1.8.7)
+--
+0,88 (plugins; to be placed; under vendor/plugins)
+0,93 (Rails 3.2; deprecates; the old plugins)
+0,95 (the Action Web Service package; is replaced; by Active Resource; T:now)
+0,97 (plugins; are; to be placed under vendor/plugins; L:Rails 3.2 deprecates the old plugins Rails 2-3-stable style)
+0,89 (developers; can make; L:Plug-in (computing; to extend existing packages)
+0,91 Context(Ruby on Rails also included Apart developers can make,List([243, 392))):(Ruby on Rails; is separated; into various packages)
+--
+0,92 (RubyGems; is included; with current versions of Ruby)
+0,92 (Many free Unix-like systems; also support; installation of Ruby on Rails and its dependencies)
+--
+0,94 (Ruby on Rails; is typically deployed; with a database server such as MySQL or PostgreSQL)
+--
+0,94 (Ruby on Rails; is intended; to emphasize ''Convention over Configuration)
+--
+0,89 Context(It is only,List([243, 253))):(Convention over Configuration; means; a developer only needs to specify unconventional aspects of the application. For example, if there is a class ''Sale'' in the model, the corresponding table in the database is called ''sales'' by default)
+0,88 Context(Convention over Configuration means It is only,List([1, 253))):(a developer; only needs; to specify unconventional aspects of the application)
+0,88 Context(Convention over Configuration means a developer only needs It is only,List([1, 253))):(a developer; only needs to specify; unconventional aspects of the application)
+--
+0,87 (Fat models, skinny controllers; means; that most of the application logic should be placed within the model while leaving the controller as light as possible)
+0,91 Context(Fat models , skinny controllers means,List([1, 38))):(most of the application logic; should be placed; within the model; T:while leaving the controller as light as possible)
+--
+0,95 (Some of the largest sites; include; GitHub, Yammer, Scribd, Shopify, Hulu, and Basecamp Classic)
+0,92 (Gartner Research; noted; that despite criticisms and comparisons to Java, many high-profile consumer web firms are using Ruby on Rails to build Agile software development, scalable web applications; T:In 2011)
+0,93 Context(Gartner Research noted,List([9, 31))):(many high-profile consumer web firms; are using; Ruby; L:on Rails; to build Agile software development)
+0,90 Context(Gartner Research noted many high - profile consumer web firms are using,List([9, 127))):(many high-profile consumer web firms; are using Ruby to build; Agile software development)
+--
+

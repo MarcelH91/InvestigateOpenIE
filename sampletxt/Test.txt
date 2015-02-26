@@ -1,0 +1,2 @@
+Hibernate is a free software that is distributed under the GNU Lesser General Public License. 
+The technology is accessible for example through Java's Hibernate API. A comparable technology is JAXB.

@@ -1,0 +1,100 @@
+How many sentences are processed?
+
+17
+
+neglected sentences: 1
+half processed sentences: 9
+completely processed sentences:	7
+
+
+How many extracted triples are correct | not correct
+
+15	 |	11
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Which correct triples fit into SoLaSoTe?
+
+0,93 (JAXB; allows; i.e. to ''unmarshal'' XML back into Java objects. In other words, JAXB allows storing and retrieving data in memory in any XML format)
+
+techUsesLang 			onto:Technology 			onto:Language
+-------------------------
+0,50 (It; is; similar to xsd.exe and XmlSerializer; L:in the .NET Framework)
+
+similarTo 				onto:Entity 				rdfs:Literal
+-------------------------
+0,92 Context(It is,List([516, 521))):(?Java Architecture for XML Binding; allows; Java (programming language) developers to map Java class (computer science) to XML representations)
+
+techDependsOnLang 		onto:Technology 			onto:Language
+-------------------------
+0,89 (JAXB; is; part of the Java Web Services Development Pack)
+
+partOf 					onto:Entity 				onto:Entity
+------------------------
+0,43 (It; is also; one of the foundations for Web Services Interoperability Technology)
+
+basedOn 				onto:System 				onto:System
+-----------------------
+0,92 Context(It is also,List([211, 221))):(JAXB; is; a part of the Java SE platform and one of the Application programming interface in Java Platform)
+
+partOf 					onto:Entity 				onto:Entity
+
+0,88 (JAXB; is a part of; the Java SE platform and one)
+
+partOf 					onto:Entity 				onto:Entity
+--
+0,94 (JAXB 1.0; was developed; L:under the Java Community Process)
+
+developedBy 			onto:Entity 				foaf:Person
+--
+0,93 Context(Marshallers and Unmarshallers are created,List([458, 499))):(XmlElement. XML list sequences; are represented; by attributes of type java.util.List)
+
+dependsOn 				onto:Entity 				onto:Entity
+--
+0,93 Context(RELAX NG , XML Document Type Definition , and Web Services Description Language WSDL are supported experimentally Classes are marked up,List([100, 260))):(The tool "xjc; can be used; to convert XML Schema (W3C) and other schema file types (as of Java 1.6)
+0,78 (JAXB; includes; a "schemagen" tool that can essentially perform the inverse of "xjc")
+
+similarTo 				onto:Entity 				rdfs:Literal
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Frequencies of predicates from the set of correct triples
+
+be:	7
+
+allow:	3
+provide: 1
+use: 1
+include: 1
+
+develop: 1
+represent:	1
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Comparison		JAXB vs Hibernate
+
+The difference in detail does not allow a significant comparison
+
+The general goal of both tools may be related. 
+JAXB has its own specific terms : marshal, unmarshal 
+
+Hibernate is more detailed
+
+Information about publisher/developer can be retrieved from both
+
+Hibernate provides a list of release informations.
+
+
+
+
+----------------
+Collection of bad samples:
+
+JAXB is a part of the Java SE platform and one of the Application programming interface in Java Platform, Enterprise Edition, the Java EE platform, and is part of the Java Web Services Development Pack (JWSDP). 
+0,89 (JAXB; is; part of the Java Web Services Development Pack)
+0,43 (It; is also; one of the foundations for Web Services Interoperability Technology)
+0,92 Context(It is also,List([211, 221))):(JAXB; is; a part of the Java SE platform and one of the Application programming interface in Java Platform)
+0,88 (JAXB; is a part of; the Java SE platform and one)

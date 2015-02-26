@@ -1,0 +1,75 @@
+0,94 (Hibernate ORM; is; an object-relational mapping library for the Java)
+0,90 (Hibernate; solves; object-relational impedance mismatch problems)
+0,90 Context(Hibernate solves,List([285, 301))):(Hibernate; solves object-relational impedance mismatch problems by replacing; direct Persistence)
+--
+0,91 (Hibernate; is; a free software that is distributed under the GNU Lesser General Public License)
+--
+0,43 (It; generates; SQL calls)
+0,88 Context(It generates,List([201, 213))):(Hibernate; provides; data query and retrieval facilities)
+0,97 Context(Hibernate provides It generates,List([139, 213))):(Hibernate's primary feature; is; mapping from Java classes to Table (database) database tables)
+0,41 (It; relieves; the developer; from manual result set handling and object conversion)
+--
+0,90 (Hibernate; can use; the XML file or the annotations; to maintain the database schema)
+0,90 Context(Hibernate can use,List([305, 322))):(Hibernate; can use the XML file or the annotations to maintain; the database schema)
+--
+0,99 (Facilities to arrange Point-to-multipoint communication one-to-many and Many-to-many (data model) many-to-many relationships between classes; are provided; )
+0,91 (Hibernate; can also manage; Reflexive relation reflexive associations where an object has a one-to-many relationship with other instances of its own data type type)
+--
+0,90 Context(This makes,List([54, 64))):(Hibernate; supports; the mapping of custom value types)
+--
+0,95 (Objects in a front-end application; follow; object-oriented programming; OOP principles)
+0,94 (Mapping; is; a way of resolving the impedance mismatch problem)
+--
+0,96 (Mapping; tells; the ORM tool; which java class object to store in which database table)
+--
+0,94 (Criteria Query; is used; to modify the objects and provide the restriction for the objects)
+0,94 Context(Criteria Query is used,List([264, 286))):(Criteria Queries; are provided; as an Object-oriented programming object-oriented alternative to HQL)
+0,92 Context(Criteria Queries are provided Criteria Query is used,List([162, 286))):(Hibernate; provides; an SQL inspired language)
+0,91 (Criteria Query; to modify; the objects)
+0,95 (an SQL inspired language; allows; SQL-like queries to be written against Hibernate's data objects)
+0,87 (Criteria Query; to provide; the restriction for the objects)
+--
+0,95 (Lazy loading; is; the default as of Hibernate 3)
+0,93 (Java Java generics; introduced; in Java 5)
+0,77 (Generics in Java Java generics; are supported; )
+0,93 Context(Generics in Java Java generics are supported,List([98, 165))):(Collections of data objects; are stored; L:in Java collection objects such as Set and List; T:typically)
+0,90 Context(Generics in Java Java generics are supported,List([98, 165))):(Hibernate; can be configured; to lazy load associated collections)
+--
+0,93 Context(This can reduce,List([231, 246))):(a parent Album object; can be configured; to cascade its save and/or delete operation to its child Track objects)
+--
+0,94 (ColdFusion; runs; L:on J2EE app servers)
+0,93 (Adobe Systems Adobe; integrated; Hibernate; into version 9 of ColdFusion)
+0,39 Context(Adobe Systems Adobe integrated,List([275, 305))):(It; can also be included; as a feature in other programming languages)
+0,72 Context(It can also be included Adobe Systems Adobe integrated,List([192, 305))):(Hibernate; can be used; )
+--
+0,72 (a ''component; can be manipulated; )
+0,90 Context(an Album object may represent,List([310, 339))):(a ''component; is; subordinate to an entity)
+0,38 (an ''entity ''; is a stand-alone object in; Hibernate)
+--
+0,93 (Hibernate; was started; T:in 2001; by Gavin King)
+0,83 (Its original goal; was; to offer better persistence capabilities than offered by EJB2 by simplifying the complexities and supplementing missing features)
+--
+0,97 (the Hibernate development team; began; Hibernate2 releases; T:In early 2003)
+0,91 (Hibernate2 releases; offered; many significant improvements over the first release)
+--
+0,97 (JBoss (company) JBoss, Inc; hired; the lead Hibernate developers; in order; T:later)
+--
+0,88 (Hibernate version 3.0; was released; T:In 2005)
+--
+0,96 (Hibernate Core 4.0.0 Final; was released; L:In Dec 2011)
+0,54 (This; includes; new features such as multi-tenancy support, introduction of ServiceRegistry (a major change in how Hibernate builds and manages "services"), better Session opening from SessionFactory, improved integration via ''org.hibernate.integrator.spi.Integrator'' and auto discovery, Internationalization and localization internationalization support and message codes in logging, and a clearer split between API, SPI and implementation classes)
+--
+0,96 (Hibernate ORM 4.1.9 Final; was released; L:In Dec 2012)
+--
+0,96 (Hibernate ORM 4.2 Final; was released; T:In March 2013)
+--
+0,96 (Hibernate ORM 4.3.0 Final; was released; L:In Dec 2013)
+--
+0,95 (development; was started; L:on Hibernate 5; T:In 2012)
+0,23 (it; is not realised; T:yet)
+0,45 (It; will feature; redesigned metamodel)
+--
+0,94 (The Hibernate API; is provided; L:in the Java package org.hibernate)
+--
+0,94 (Hibernate ORM; known; as Hibernate Core)
+0,95 (Hibernate Search; integrates; the full text library functionality from Apache Lucene in the Hibernate and JPA model)

@@ -1,0 +1,139 @@
+How many sentences are processed?
+34
+
+neglected sentences: 	4
+half processed sentences: 	17
+completely processed sentences: 	13
+
+
+How many extracted triples are correct | not correct
+
+34	 |	37
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Which correct triples fit into SoLaSoTe?
+
+0,95 Context(It is maintained,List([189, 205))):(Django; is; a free and open source web application framework, written in Python (programming language),)
+
+memberOf 				onto:Entity 				onto:Container
+--------------
+0,94 (Django; emphasizes; reusability and "pluggability" of components, rapid development, and the principle of)
+
+supports 				onto:Instrument 			onto:Instrument
+--------------
+0,51 (It; consists; of an object-relational mapping object-relational mapper)
+
+partOf 					onto:Entity 				onto:Entity
+--------------
+0,94 Context(It consists,List([152, 163))):(the core Django framework; can be seen; as MVC)
+
+techUsesConcept 		onto:Technology 			onto:Concept
+--------------
+0,83 (The main Django distribution; bundles; a number of applications in its "contrib" package, including an extensible authentication system, the dynamic administrative interface, tools for generating RSS (file format) and Atom syndication feeds, a sites framework that allows one Django installation to run multiple websites, each with their own content and applications tools for generating Google Sitemaps, built-in mitigation for cross-site request forgery, cross-site scripting, SQL injection, password cracking and other typical web attacks)
+
+partOf 					onto:Entity 				onto:Entity
+-------------
+0,91 (More than 2500 packages; to extend; the framework original behavior)
+0,91 (More than 2500 packages; providing; solutions; to issues)
+0,90 (More than 2500 packages; are; available to extend the framework original behavior)
+0,91 Context(More than 2500 packages are,List([141, 168))):(Django's configuration system; allows; third party code to be plugged in a regular project, provided they follow the reusable app conventions. More than 2500 packages are available to extend the framework original behavior, providing solutions to issues the original tool)
+0,89 Context(Django 's configuration system allows More than 2500 packages are,List([0, 168))):(third party code; to be plugged; L:in a regular project)
+
+supports 				onto:Instrument 			onto:Instrument    (Django supports Plugin Dev.)
+------------
+0,95 (both the auth and admin bundled applications; require; the use of the internal ORM)
+
+techDependsOnConcept 	onto:Technology 			onto:Concept
+------------
+0,93 (Django philosophy; implies; loose coupling, the template filters and tags)
+
+supports 				onto:Instrument 			onto:Instrument
+------------
+0,95 (a Fork (software development) named django-nonrel; supports; NoSQL)
+
+varies 					onto:System 				onto:System
+------------
+0,94 (Google App Engine; includes; support for Django version 1.x)
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Frequencies of predicates from the set of correct triples
+
+be:			6
+
+emphasize:	1
+encourage:	1
+imply:		1
+
+provide:	2
+include:	2
+consist:	1
+bundle:		1
+allow:		2
+support:	1
+
+release:	1
+
+maintain:	1
+name:		2
+mediate:	1
+define:		1
+see:		1
+run:		1
+extend:		1
+plug:		1
+require:	1
+take:		1
+hold:		4
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Collection of bad samples:
+
+?''Django'' is a free and open source web application framework, written in Python (programming language), which follows the model–view–controller Architectural pattern (computer science). It is maintained by the Django Software Foundation (DSF), an independent organization established as a 501(c)(3) non-profit.
+0,94 (a free and open source web application framework; written; L:in Python)
+0,92 (Python; follows; the model-view-controller Architectural pattern)
+0,94 (an independent organization; established; as a 501(c)(3) non-profit)
+0,44 (It; is maintained; by the Django Software Foundation)
+0,95 Context(It is maintained,List([189, 205))):(Django; is; a free and open source web application framework, written in Python (programming language),)
+
+Django emphasizes reusability and "pluggability" of components, rapid development, and the principle of don't repeat yourself.
+0,94 (Django; emphasizes; reusability and "pluggability" of components, rapid development, and the principle of)
+
+(Missing context)
+Python is used throughout, even for settings, files, and data models.
+0,92 (Python; is used; T:throughout; even for settings, files, and data models)
+
+(Missing completeness)
+Django was born in the fall of 2003, when the web programmers at the ''Lawrence Journal-World'' newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications.
+0,96 (the web programmers at the ''Lawrence Journal-World'' newspaper; began; using Python to build applications)
+
+In June 2008, it was announced that a newly formed Django Software Foundation (DSF) would maintain Django in the future.
+(no result)
+
+(long list problem)
+Also included in the core framework are a lightweight and standalone web server for development and testing, a form serialization and validation system which can translate between HTML forms and values suitable for storage in the database, a template system that utilizes the concept of Inheritance (object-oriented programming) borrowed from object-oriented programming, a Web cache framework which can use any of several cache methods, support for middleware classes which can intervene at various stages of request processing and carry out custom functions, an internal dispatcher system which allows components of an application to communicate events to each other via pre-defined signals, an Internationalization and localization system, including translations of Django's own components into a variety of languages, a serialization system which can produce and read XML and/or JSON representations of Django model instances, a system for extending the capabilities of the template engine and an interface to Python's built in unit test framework.
+0,89 (middleware classes; can intervene; at various stages of request processing)
+0,90 (a serialization system; read; XML)
+0,70 (validation system; can translate; )
+0,89 (middleware classes; carry out; custom functions)
+0,72 (a serialization system; can produce; )
+0,91 (a template system; utilizes; the concept of Inheritance (object-oriented programming)
+0,92 (Python; 's built; L:in unit test framework)
+0,91 (an internal dispatcher system; allows; components of an application)
+0,91 (object-oriented programming; borrowed; from object-oriented programming)
+0,94 (a Web cache framework; can use; any of several cache methods, support for middleware classes which can intervene at various stages of request processing and carry out custom functions, an internal dispatcher system)
+0,50 (the core framework; are a lightweight and standalone web server for; development and testing)
+
+(Context errors)
+Django may also be run in conjunction with Jython on any Java EE application server such as GlassFish or JBoss. In this case django-jython must be installed in order to provide JDBC drivers for database connectivity, which also provides functionality to compile Django in to a .war suitable for deployment.
+0,69 (Django; may be run; )
+0,95 (django-jython; must be installed; in order; L:In this case)
+0,94 (database connectivity; provides; functionality to compile Django in to a .war suitable for deployment)
+
+Missing information:
+Django mini-conferences were held in Hobart, Australia in July 2013 and Brisbane, Australia in August 2014.
+0,94 (Django mini-conferences; were held; L:in Hobart; T:in July 2013 and Brisbane; T:in August 2014)

@@ -1,0 +1,320 @@
+﻿{{distinguish|Ruby (programming language)}}
+{{Infobox software
+ | name                   = Ruby on Rails
+ | logo                   = [[File:Ruby on Rails.svg|150px]]
+ | screenshot             =
+ | caption                =
+ | author                 = [[David Heinemeier Hansson]]
+ | developer              = [http://www.rubyonrails.org/core Rails Core Team]
+ | discontinued           = 
+ | latest release version = 4.2
+ | latest release date    = {{release date and age|2014|12|19}}<ref name=announce>{{cite web |url=http://weblog.rubyonrails.org/2014/12/19/Rails-4-2-final/ |title=Rails 4.2: Active Job, Asynchronous Mails, Adequate Record, Web Console, Foreign Keys|website=Ruby on Rails |author=dhh |accessdate=20 Dec 2014}}</ref>
+ | latest preview version = 4.2.0.rc1
+ | released               = {{Start date and age|df=yes|2005|12|13}}
+ | latest preview date    = {{release date and age|2014|11|28}}<ref>{{cite web |url=http://weblog.rubyonrails.org/2014/11/28/Rails-4-2-0-rc1-has-been-released/  |title=Rails 4.2.0.rc1 has been released!}}</ref>
+ | status                 = Active
+ | operating system       = [[Cross-platform]]
+ | platform               =
+ | language               =
+ | programming language   = [[Ruby (programming language)|Ruby]]
+ | genre                  = [[Web application framework]]
+ | license                = [[Expat License]]
+ | website                = {{URL|http://rubyonrails.org}}
+}}
+'''Ruby on Rails''', or simply '''Rails''', is an [[open source]] [[web application framework]] written in [[Ruby (programming language)|Ruby]]. Rails is a [[Solution stack#Full Stack|full-stack]] framework that emphasizes the use of well-known [[software engineering]] [[software design pattern|patterns]] and paradigms, including [[convention over configuration]] (CoC), [[don't repeat yourself]] (DRY), the [[active record pattern]],  and [[model–view–controller]] (MVC).<ref>{{cite web|title=Getting Started with Rails: What Is Rails?|url=http://guides.rubyonrails.org/getting_started.html#what-is-rails-questionmark|website=Ruby on Rails Guides|accessdate=10 August 2014}}</ref>
+
+==History==
+[[David Heinemeier Hansson]] extracted Ruby on Rails from his work on [[Basecamp Classic|Basecamp]], a project management tool by [[37signals]] (now a [[web application]] company).<ref name="interview-davidhh">{{cite web
+  | first = Lenz
+  | last = Grimmer
+  | date = February 2006
+  | title = Interview with David Heinemeier Hansson from Ruby on Rails
+  | url = https://web.archive.org/web/20130225091835/http://dev.mysql.com/tech-resources/interviews/david-heinemeier-hansson-rails.html
+  | publisher = [[MySQL AB]]
+  | accessdate = 2008-06-08
+}}</ref>
+Hansson first released Rails as open source in July 2004, but did not share [[Commit (data management)|commit]] rights to the project until February 2005.<ref name=core>{{cite web
+  | url = http://www.rubyonrails.org/core
+  | title = Rails core team profiles.
+  | accessdate = 2008-07-15
+}}</ref>
+In August 2006, the framework reached a milestone when [[Apple Inc.|Apple]] announced that it would ship Ruby on Rails with [[Mac OS X Leopard|Mac OS X v10.5 "Leopard"]],<ref>{{cite web
+  | url = http://weblog.rubyonrails.org/2006/8/7/ruby-on-rails-will-ship-with-os-x-10-5-leopard
+  | title = Ruby on Rails will ship with OS X 10.5 (Leopard)
+  | accessdate = 2008-06-08
+  | last = Hansson
+  | first = David
+  | date = August 7, 2006
+}}</ref>
+which was released in October 2007.
+
+Rails version 2.3 was released on March 15, 2009 with major new developments in templates, engines, [[Rack (web server interface)|Rack]] and nested model forms. Templates enable the developer to generate a skeleton application with custom [[RubyGems|gems]] and configurations. Engines give developers the ability to reuse application pieces complete with routes, view paths and models. The Rack web server interface and Metal allow one to write optimized pieces of code that route around ActionController.<ref name="Rails 2.3: Templates, Engines, Rack, Metal, much more!">{{cite web
+| first = David
+| last = Hansson
+| date = March 16, 2009
+| title = Rails 2.3: Templates, Engines, Rack, Metal, much more!
+| url = http://weblog.rubyonrails.org/2009/3/16/rails-2-3-templates-engines-rack-metal-much-more
+}}</ref>
+
+On December 23, 2008, [[Merb]], another web application framework, was launched, and Ruby on Rails announced it would work with the Merb project to bring "the best ideas of Merb" into Rails 3, ending the "unnecessary duplication" across both communities.<ref name="The day Merb joined Rails">{{cite web|date=2008-12-27|title=The day Merb joined Rails|url=http://rubyonrails.org/merb}}</ref> Merb was merged with Rails as part of the Rails 3.0 release.<ref>[http://edgeguides.rubyonrails.org/3_0_release_notes.html Ruby on Rails 3.0 Release Notes]</ref><ref>{{cite web|publisher=sdtimes.com|date=2010-02-10|title=Ruby on Rails 3.0 goes modular|url=http://www.sdtimes.com/link/34122| accessdate=2010-08-06}}</ref>
+
+Rails 3.1 was released on August 31, 2011, featuring Reversible Database Migrations, Asset Pipeline, Streaming, [[jQuery]] as default JavaScript library and newly introduced [[CoffeeScript]] and [[Sass (stylesheet language)|Sass]] into the stack.<ref name="Ruby on Rails 3.1 Release Notes">{{cite web|date=2012-09-01|title=Ruby on Rails 3.1 Release Notes|url=http://guides.rubyonrails.org/3_1_release_notes.html}}</ref>
+
+Rails 3.2 was released on January 20, 2012 with a faster development mode and routing engine (also known as Journey engine), Automatic Query Explain and Tagged Logging.<ref name="Ruby on Rails 3.2 Release Notes">{{cite web|date=2012-09-01|title=Ruby on Rails 3.2 Release Notes|url=http://guides.rubyonrails.org/3_2_release_notes.html}}</ref> Rails 3.2.x is the last version that supports Ruby 1.8.7.<ref name="Rails/master is now 4.0.0.beta">{{cite web|date=2012-09-01|title=Rails/master is now 4.0.0.beta|url=http://weblog.rubyonrails.org/2011/12/20/rails-master-is-now-4-0-0-beta/}}</ref> Rails 3.2.12 supports Ruby 2.0<ref>[https://github.com/rails/rails/pull/9406 Rails 3.2.x is now compatible with Ruby 2.0.0 by sikachu · Pull Request #9406 · rails/rails · GitHub]. Github.com. Retrieved on 2014-05-30.</ref>
+
+Rails 4.0 was released on June 25, 2013, introducing Russian Doll Caching, Turbolinks, Live Streaming as well as making Active Resource, Active Record Observer and other components optional by splitting them as gems.<ref>[http://weblog.rubyonrails.org/2013/6/25/Rails-4-0-final/ Rails 4 is finally released]</ref>
+
+Rails 4.1 was released on April 8, 2014, introducing Spring, Variants, Enums, Mailer previews, and secrets.yml.<ref>[http://weblog.rubyonrails.org/2014/4/8/Rails-4-1/ Rails 4.1.0: Spring, Variants, Enums, Mailer previews, secrets.yml]</ref>
+
+Rails 4.2 was released on December 19, 2014, introducing Active Job, asynchronous emails, Adequate Record, Web Console, and [[foreign key]]s.<ref name=announce/>
+
+{| class="wikitable sortable" style="float:left;"
+|+ Version history
+|-
+! Version !! Date
+|-
+| 1.0<ref>[http://weblog.rubyonrails.org/2005/12/13/rails-1-0-party-like-its-one-oh-oh/ "Rails 1.0: Party like it's one oh oh!"]. Riding Rails. Retrieved June 9, 2010.</ref> || {{dts|2005|12|13}}
+|-
+| 1.2<ref>[http://weblog.rubyonrails.org/2007/1/18/rails-1-2-rest-admiration-http-lovefest-and-utf-8-celebrations "Rails 1.2: REST admiration, HTTP lovefest, and UTF-8 celebrations"]. Riding Rails. Retrieved June 9, 2010.</ref> || {{dts|2007|1|19}}
+|-
+| 2.0<ref>[http://weblog.rubyonrails.org/2007/12/7/rails-2-0-it-s-done "Rails 2.0: It's done!"]. Riding Rails. Retrieved June 9, 2010.</ref> || {{dts|2007|12|7}}
+|-
+| 2.1<ref>[http://weblog.rubyonrails.org/2008/5/31/rails-2-1-time-zones-dirty-caching-gem-dependencies-caching-etc Rails 2.1: Time zones, dirty, caching, gem dependencies, caching, etc]. Riding Rails. Retrieved June 9, 2010.</ref> || {{dts|2008|6|1}}
+|-
+| 2.2<ref>[http://weblog.rubyonrails.org/2008/11/21/rails-2-2-i18n-http-validators-thread-safety-jruby-1-9-compatibility-docs "Rails 2.2: i18n, HTTP validators, thread safety, JRuby/1.9 compatibility, docs"]. Riding Rails. Retrieved June 9, 2010.</ref> || {{dts|2008|11|21}}
+|-
+| 2.3<ref>[http://weblog.rubyonrails.org/2009/3/16/rails-2-3-templates-engines-rack-metal-much-more "Rails 2.3: Templates, Engines, Rack, Metal, much more!"]. Riding Rails. Retrieved June 9, 2010.</ref> || {{dts|2009|3|16}}
+|-
+| 3.0<ref>[http://weblog.rubyonrails.org/2010/8/29/rails-3-0-it-s-done "Rails 3.0: It's ready!"]. Riding Rails. Retrieved August 30, 2010.</ref> || {{dts|2010|8|29}}
+|-
+| 3.1<ref>[https://github.com/rails/rails/commit/505e84599aff6abf719484636b0515e1ce2e2220] www.github.com</ref> || {{dts|2011|8|31}}
+|-
+| 3.2<ref>[https://github.com/rails/rails/commit/f36dcaf488b4357a52f43e3912628428956d351f] www.github.com</ref> || {{dts|2012|1|20}}
+|-
+| 4.0<ref>[http://blog.wyeworks.com/2012/10/29/rails-4-in-30-minutes/] blog.wyeworks.com</ref> || {{dts|2013|6|25}}
+|-
+| 4.1<ref>[http://weblog.rubyonrails.org/2014/4/8/Rails-4-1/] weblog.rubyonrails.org</ref> || {{dts|2014|4|8}}
+|-
+| 4.2<ref name=announce/> || {{dts|2014|12|19}}
+|-
+<!--
+
+MAJOR RELEASES ONLY PLEASE
+
+-->
+|}
+{{Clr}}
+
+==Technical overview==
+Like many web frameworks, Ruby on Rails uses the [[model–view–controller]] (MVC) pattern to organize application programming.
+
+In a default configuration, a ''model'' in the Ruby on Rails framework maps to a table in a database, and a Ruby file. For example, a model class User will usually be defined in the file user.rb in the app/models directory, and is linked to the table users in the database. Developers can choose any model name, file name or database table name. But this is not common practice and usually discouraged according to the "convention over configuration" philosophy.
+
+A ''controller'' is a component of Rails that responds to external requests from the web server to the application by determining which view file to render. The controller may also have to query one or more models directly for information and pass these on to the view. A controller may provide one or more actions. In Ruby on Rails, an action is typically a basic unit that describes how to respond to a specific external web-browser request. Also note that the controller/action will be accessible for external web requests only if a corresponding route is mapped to it. Rails encourages developers to use [[Representational state transfer|REST]]ful routes, which include actions such as: create, new, edit, update, destroy, show, and index. These mappings of incoming requests/routes to controller actions can be easily set up in the routes configuration file.
+
+A ''view'' in the default configuration of Rails is an [[ERB-Templating|erb]] file, which is compiled to HTML at run-time. Many other templating systems can be used for views.
+
+Ruby on Rails includes tools that make common development tasks easier "out of the box", such as [[Scaffold (programming)|scaffolding]] that can automatically construct some of the models and views needed for a basic [[website]].<ref>[http://fairleads.blogspot.com/2007/12/rails-20-and-scaffolding-step-by-step.html There were quite a few changes in the 2.0 release, including the way that Ruby on Rails generates scaffolding code.]</ref> Also included are [[WEBrick]], a simple Ruby web server that is distributed with Ruby, and [[Rake (software)|Rake]], a build system, distributed as a [[RubyGems|gem]]. Together with Ruby on Rails, these tools provide a basic development environment.
+
+Ruby on Rails is most commonly not connected to the Internet directly, but through some front-end [[web server]]. [[Mongrel (web server)|Mongrel]] was generally preferred over WEBrick in the early days,{{Citation needed|date=January 2010}} but it can also run on [[Lighttpd]], [[Apache (web server)|Apache]], [[Cherokee (Webserver)|Cherokee]], [[Hiawatha (web server)|Hiawatha]], [[nginx]] (either as a module — [[Phusion Passenger]] for example — or via [[Common Gateway Interface|CGI]], [[FastCGI]] or [[mod_ruby]]), and many others. From 2008 onwards, the Passenger web server replaced Mongrel as the most-used web server for Ruby on Rails.<ref>[http://rubyonrails.org/deploy Official deployment instructions suggests use of Passenger]</ref> Ruby is also supported natively on the [[IBM i]].<ref>{{cite web|last=Maxcer|first=Chris|title=PowerRuby Brings Enterprise Ruby on Rails Support to IBM i|url=http://iprodeveloper.com/application-development/powerruby-brings-enterprise-ruby-rails-support-ibm-i|publisher=iPro Developer|accessdate=9 May 2014|archivedate=9 October 2013}}</ref>
+
+Ruby on Rails is also noteworthy for its extensive use of the [[JavaScript]] libraries [[Prototype JavaScript Framework|Prototype]] and [[Script.aculo.us]] for [[Ajax (programming)|Ajax]].<ref>[http://api.rubyonrails.org/classes/ActionView/Helpers/JavaScriptHelper.html Ruby on Rails includes the Prototype JavaScript framework and the Scriptaculous JavaScript controls and visual effects library.]</ref> Ruby on Rails initially utilized lightweight [[SOAP]] for web services; this was later replaced by [[Representational State Transfer|RESTful]] [[web services]]. Ruby on Rails 3.0 uses a technique called [[Unobtrusive JavaScript]] to separate the functionality (or logic) from the structure of the web page. jQuery is fully supported as a replacement for [[Prototype JavaScript Framework|Prototype]] and is the default JavaScript library in Rails 3.1, reflecting an industry-wide move towards jQuery. Additionally, [[CoffeeScript]] was introduced in Rails 3.1 as the default Javascript language.
+
+Since version 2.0, Ruby on Rails offers both [[HTML]] and [[XML]] as standard output formats. The latter is the facility for RESTful web services.
+
+Rails 3.1 introduced Sass as standard CSS templating.
+
+By default, the server uses [[ERuby|Embedded Ruby]] in the HTML views, with files having an html.erb extension.  Rails supports swapping-in alternative templating languages, such as [[HAML]] and [[Mustache (template system)|Mustache]].
+
+Ruby on Rails 3.0 has been designed to work with Ruby 1.8.7, Ruby 1.9.2, and [[JRuby]] 1.5.2+; earlier versions are not supported.<ref>{{cite web|url=http://weblog.rubyonrails.org/2010/8/29/rails-3-0-it-s-done|title=Rails 3.0: It's ready!|publisher=rubyonrails.org|quote=Rails 3.0 has been designed to work with Ruby 1.8.7, Ruby 1.9.2, and JRuby 1.5.2+.|accessdate=2010-08-30}}</ref>
+
+Rails 3.2 series is the last series to support Ruby 1.8.7.
+
+===Framework structure===
+Ruby on Rails is separated into various packages, namely [[ActiveRecord (Rails)|ActiveRecord]] (an [[object-relational mapping]] system for database access), ActiveResource (provides web services), ActionPack, ActiveSupport and ActionMailer. Prior to version 2.0, Ruby on Rails also included the Action Web Service package that is now replaced by Active Resource. Apart from standard packages, developers can make [[Plug-in (computing)|plugins]] to extend existing packages. Rails 3.2 deprecates the old plugins Rails 2-3-stable style in which plugins are to be placed under vendor/plugins, in favor of packaged gems.<ref name="Rails 3.2.0.rc2 has been released!">{{cite web|date=2012-09-01|title=Rails 3.2.0.rc2 has been released!|url=http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released/}}</ref>
+
+===Deployment===
+
+Ruby on Rails is often installed using [[RubyGems]], a package manager<ref>{{cite web|url=http://rubyonrails.org/download |title=Ruby on Rails: Download|publisher=RubyonRails.org}}</ref> which is included with current versions of Ruby. Many free [[Unix-like system]]s also support installation of Ruby on Rails and its dependencies through their native [[package management system]].
+
+Ruby on Rails is typically deployed with a database server such as [[MySQL]] or [[PostgreSQL]], and a web server such as [[Apache HTTP Server|Apache]] running the [[Phusion Passenger]] module.
+
+==Philosophy and design==
+Ruby on Rails is intended to emphasize ''[[Convention over Configuration]]'' (CoC), and the ''[[Don't Repeat Yourself]]'' (DRY) principle.
+
+"Convention over Configuration" means a developer only needs to specify unconventional aspects of the application. For example, if there is a class ''Sale'' in the model, the corresponding table in the database is called ''sales'' by default. It is only if one deviates from this convention, such as calling the table "products sold", that the developer needs to write code regarding these names. Generally, Ruby on Rails conventions lead to less code and less repetition.<ref>
+  {{cite web
+  | url = http://guides.rubyonrails.org/getting_started.html
+  | title = Getting Started with Rails
+  | publisher = Rubyonrails.org
+  | accessdate = 2014-03-10}}</ref>
+
+"Don't repeat yourself" means that information is located in a single, unambiguous place. For example, using the [[ActiveRecord (Rails)|ActiveRecord]] module of Rails, the developer does not need to specify database column names in class definitions. Instead, Ruby on Rails can retrieve this information from the database based on the class name.
+
+"Fat models, skinny controllers" means that most of the application logic should be placed within the model while leaving the controller as light as possible.
+
+==Trademarks==
+In March 2007, [[David Heinemeier Hansson]] filed three Ruby on Rails-related [[trademark]] applications to the [[USPTO]]. These applications regard the phrase "RUBY ON RAILS",<ref name="Trademark 77119206">{{cite web | title = "Ruby on Rails" Trademark Status | url = http://tarr.uspto.gov/servlet/tarr?regser=serial&entry=77119206 | publisher = [[USPTO]] | accessdate = 2007-08-01}}</ref> the word "RAILS",<ref name="Trademark 77119210">{{cite web | title = "Rails" Trademark Status | url = http://tarr.uspto.gov/servlet/tarr?regser=serial&entry=77119210 | publisher = [[USPTO]] | accessdate = 2007-08-01}}</ref> and the official Rails logo.<ref name="Trademark 77119208">{{cite web | title = Rails Logo Trademark Status | url = http://tarr.uspto.gov/servlet/tarr?regser=serial&entry=77119208 | publisher = [[USPTO]] | accessdate = 2007-08-01}}</ref> As a consequence, in the summer of 2007, Hansson denied permission to [[Apress]] to use the Ruby on Rails logo on the cover of a new Ruby on Rails book written by some authoritative community members. The episode gave rise to a polite protest in the Ruby on Rails community.<ref name="Community criticism">{{cite web | first = Pete | last = Forde | date = 2007-07-23 | title = Beginning Rails: From Novice to Professional | url = http://rethink.unspace.ca/2007/7/23/beginning-rails-from-novice-to-professional | accessdate = 2007-08-01}}</ref><ref name="community-criticism-2">{{cite web | first = Peter | last = Cooper | date = 2007-07-24 | title = David Heinemeier Hansson says No to Use of Rails Logo | url = http://www.rubyinside.com/david-heinemeier-hansson-says-no-to-use-of-rails-logo-567.html | accessdate = 2007-08-01}}</ref> In response to this criticism, Hansson replied:
+<blockquote>I only grant promotional use [of the Rails logo] for products I'm directly involved with. Such as books that I've been part of the development process for or conferences where I have a say in the execution. I would most definitely seek to enforce all the trademarks of Rails.<ref name="Community criticism" /></blockquote>
+
+==Reception==
+
+===Scalability===
+Rails running on [[Ruby MRI|Matz's Ruby Interpreter]] (the ''de facto'' reference interpreter for Ruby) had been criticized for issues with scalability.<ref>{{cite web
+| publisher=radicalbehavior.com
+| date = 2007-03-29
+| title = 5 Question Interview with Twitter Developer Alex Payne
+| quote=''By various metrics Twitter is the biggest Rails site on the net right now. Running on Rails has forced us to deal with scaling issues - issues that any growing site eventually contends with – far sooner than I think we would on another framework.''
+| url = https://web.archive.org/web/20090423002030/http://www.radicalbehavior.com/5-question-interview-with-twitter-developer-alex-payne/?
+| accessdate = 2014-11-04
+}}</ref> These critics often mentioned various [[Twitter]] outages in 2007 and 2008, which spurred Twitter's partial transition to [[Scala (programming language)|Scala]] (which runs on the [[Java Virtual Machine]]) for their [[Message queue|queueing system]] and other [[middleware]].<ref>{{cite web
+| publisher=artima.com
+| author=Steve Jenson, Alex Payne, and Robey Pointer interview
+| date = 2009-04-03
+| title = Twitter on Scala
+| url = http://www.artima.com/scalazine/articles/twitter_on_scala.html
+| quote=''We had a Ruby-based queuing system that we used for communicating between the Rails front ends and the daemons, and we ended up replacing that with one written in Scala. The Ruby one actually worked pretty decently in a normal steady state, but the startup time and the crash behavior were undesirable.''
+| accessdate = 2009-07-18
+}}</ref><ref>{{cite web
+| publisher=theregister.co.uk
+| date = 2009-04-01
+| title = Twitter jilts Ruby for Scala
+| url = http://www.theregister.co.uk/2009/04/01/twitter_on_scala/
+| quote=''By the end of this year, Payne said, Twitter hopes to have its entire middleware infrastructure and its APIs ported to the new language. Ruby will remain, but only on the front end. "We're still happy with Rails for building user facing features... performance-wise, it's fine for people clicking around web pages. It's the heavy lifting, asynchronous processing type of stuff that we've moved away from."''
+| accessdate = 2009-07-18
+}}</ref> The user interface aspects of the site continued to run Ruby on Rails<ref>{{cite web
+| publisher=evan weaver
+| author=ryan king
+| date = 2009-09-25
+| title = Twitter on Ruby
+| url = http://blog.evanweaver.com/articles/2009/09/24/ree/
+| quote=''We use Scala for a few things at Twitter, but the majority of the site is Ruby.''
+| accessdate = 2009-09-29
+}}</ref> until 2011 when it was replaced due to concerns over performance <ref>{{cite web | url=https://blog.twitter.com/2011/twitter-search-now-3x-faster | title=Twitter Search is Now 3x Faster | publisher=Twitter | accessdate=June 6, 2014}}.</ref>
+
+In 2011, [[Gartner|Gartner Research]] noted that despite criticisms and comparisons to Java, many high-profile consumer web firms are using Ruby on Rails to build [[Agile software development|agile]], scalable web applications.  Some of the largest sites running Ruby on Rails include [[GitHub]], [[Yammer]], [[Scribd]], [[Shopify]], [[Hulu]], and [[Basecamp Classic|Basecamp]].<ref name="bi20110511">{{cite web | url=http://articles.businessinsider.com/2011-05-11/tech/30035869_1_ruby-rails-custom-software | title=Here's Why Ruby On Rails Is Hot | publisher=Business Insider | accessdate=February 10, 2012}}</ref>  As of May 2014, it is estimated that more than 600,000 web sites are running Ruby on Rails.<ref>{{cite web | url=http://trends.builtwith.com/framework/Ruby-on-Rails | title=Ruby on Rails Usage Trends | publisher=BuiltWith Trends | accessdate=May 4, 2014}}</ref>
+
+===Security===
+On September 24, 2013, a session cookie persistence security flaw was reported in Ruby on Rails. In a default configuration, the entire session hash is stored within a session cookie known as CookieStore, allowing any authenticated session possessing the session cookie to log in as the target user at any time in the future. As a workaround, administrators are advised to configure cookies to be stored on the server using mechanisms such as ActiveRecordStore.
+<ref name="Threatpost1">{{cite news |last=Brook |first=Chris |url=http://threatpost.com/security-issue-in-ruby-on-rails-could-expose-cookies/102413 |title=Security Issue in Ruby on Rails Could Expose Cookies |work=Threat Post |publisher= The Kaspersky Lab Security News Service |date=2013-09-25 |accessdate=2014-06-04 }}</ref>
+
+==References==
+{{Reflist|2}}
+
+==Bibliography==
+{{Refbegin}}
+*{{Cite journal
+| first1    = Sam
+| last1     = Ruby
+| first2    = Dave
+| last2     = Thomas
+| first3    = David
+| last3     = Hansson
+| date      = March 28, 2009
+| title     = Agile Web Development with Rails
+| edition   = Third
+| publisher = [[Pragmatic Bookshelf]]
+| page     = 850
+| isbn      = 1-934356-16-6
+| url       = http://www.pragprog.com/titles/rails3/agile-web-development-with-rails-third-edition
+| postscript    = <!--None-->
+}}
+*{{Cite journal
+| first1    = Simon St.
+| last1     = Laurent
+| first2    = Edd
+| last2     = Dumbill
+| date      = November 28, 2008
+| title     = Learning Rails
+| edition   = First
+| publisher = [[O'Reilly Media]]
+| page     = 442
+| isbn      = 0-596-51877-3
+| url       = http://oreilly.com/catalog/9780596518776/
+| postscript    = <!--None-->
+}}
+*{{Cite journal
+| first1    = Patrick
+| last1     = Lenz
+| date      = May 1, 2008
+| title     = Simply Rails 2
+| edition   = Second
+| publisher = [[SitePoint]]
+| page     = 450
+| isbn      = 0-9804552-0-0
+| url       = http://www.sitepoint.com/books/rails2/
+| postscript    = <!--None-->
+}}
+*{{Cite journal
+| first1    = Bruce
+| last1     = Tate
+| first2    = Curt
+| last2     = Hibbs
+| date      = August 22, 2006
+| title     = Ruby on Rails: Up and Running
+| edition   = First
+| publisher = [[O'Reilly Media]]
+| page     = 182
+| isbn      = 0-596-10132-5
+| url       = http://oreilly.com/catalog/9780596101329/
+| postscript    = <!--None-->
+}}
+*{{Cite journal
+| first1    = Steve
+| last1     = Holzner Ph.D.
+| date      = November 29, 2006
+| title     = Beginning Ruby on Rails
+| edition   = First
+| publisher = [[Wrox Press|Wrox]]
+| page     = 380
+| isbn      = 0-470-06915-5
+| url       = http://www.wrox.com/WileyCDA/WroxTitle/Beginning-Ruby-on-Rails.productCd-0470069155.html
+| postscript    = <!--None-->
+}}
+*{{Cite journal
+| first1    = Jeffrey
+| last1     = Allan Hardy
+| first2    = Cloves
+| last2     = Carneiro Jr
+| first3    = Hampton
+| last3     = Catlin
+| date      = July 20, 2007
+| title     = Beginning Ruby on Rails E-Commerce: From Novice to Professional
+| edition   = First
+| publisher = [[Wrox Press|Wrox]]
+| page     = 361
+| isbn      = 1-59059-686-2
+| url       = http://www.apress.com/book/view/9781590597361
+| postscript    = <!--None-->
+}}
+*{{Cite journal
+| first1    = Mike
+| last1     = Clark
+| date      = May 15, 2008
+| title     = Advanced Rails Recipes
+| edition   = First
+| publisher = Pragmatic Bookshelf
+| page     = 464
+| isbn      = 0-9787392-2-1
+| url       = http://www.pragprog.com/titles/fr_arr/advanced-rails-recipes
+| postscript    = <!--None-->
+}}
+{{Refend}}
+
+==External links==
+<!-- Wikipedia is not a linkfarm. If you think there is an amazing reason that another link should be added, discuss it on the talk page. Otherwise it's snip snip snip! -->
+{{Wikibooks|Ruby on Rails}}
+*[http://www.rubyonrails.org/ Ruby on Rails official website] – rubyonrails.org
+*[http://railscasts.com/ Railscasts.com] – these screencasts are short and focus on Ruby on Rails technique
+*[https://github.com/rails/rails Rails source code]
+
+{{Ruby programming language}}
+{{Application frameworks}}
+
+{{DEFAULTSORT:Ruby On Rails}}
+[[Category:2004 introductions]]
+[[Category:Free computer libraries]]
+[[Category:Free software programmed in Ruby]]
+[[Category:Web 2.0]]
+[[Category:Web application frameworks]]
+[[Category:Software using the MIT license]]
